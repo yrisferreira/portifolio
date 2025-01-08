@@ -1,0 +1,210 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte padrão */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #2C3E50; /* Azul escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Seção Hero */
+  #hero {
+    background-color: #D95F95; /* Rosa suave */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #hero .btn {
+    padding: 12px 25px;
+    background-color: #E74C3C; /* Tom de vermelho alegre */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  #hero .btn:hover {
+    background-color: #C0392B;
+  }
+  
+  /* Seção Sobre */
+  #sobre {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  #sobre h2 {
+    font-size: 32px;
+    color: #D95F95; /* Rosa suave */
+    margin-bottom: 20px;
+  }
+  
+  #sobre p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Projetos */
+  #projetos {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+  }
+  
+  #projetos h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2980B9; /* Azul suave */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #2980B9; /* Azul suave */
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D95F95; /* Rosa suave */
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .card .btn:hover {
+    background-color: #C0392B; /* Tom mais quente de vermelho */
+  }
+  
+  /* Contato */
+  #contato {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  #contato h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #D95F95; /* Rosa suave */
+  }
+  
+  #contato p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #contato ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  #contato ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #contato ul li a {
+    color: #2980B9; /* Azul suave */
+    text-decoration: none;
+  }
+  
+  #contato ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #2C3E50; /* Azul escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
