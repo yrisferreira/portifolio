@@ -1,85 +1,210 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Portfólio - Yris Ferreira</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Cabeçalho -->
-  <header>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Seção Hero -->
-  <section id="hero">
-    <div class="container">
-      <h2>Olá, sou Yris Ferreira</h2>
-      <p>Especialista em tecnologia, inovação e desenvolvimento de soluções criativas para empresas. Vamos transformar ideias em soluções digitais?</p>
-      <a href="#projetos" class="btn">Ver Projetos</a>
-    </div>
-  </section>
-
-  <!-- Sobre Mim -->
-  <section id="sobre" class="container">
-    <h2>Sobre Mim</h2>
-    <p> Desenvolvedora especializada em automação inteligente, focada em criar soluções tecnológicas que não apenas resolvem problemas, mas também encantam os usuários. Com experiência em ferramentas como Odoo, Python, JavaScript, Power Automate, entre outras, tenho a capacidade de desenvolver soluções inovadoras e personalizadas, atendendo às necessidades de empresas de diversos setores.</p>
-  </section>
-
-  <!-- Meus Projetos -->
-  <section id="projetos" class="container">
-    <h2>Meus Projetos</h2>
-    <div class="grid">
-      <!-- Projeto 1 -->
-      <div class="card">
-        <h3> Aratiri Tecnologias </h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://link-do-projeto1.com" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 2 -->
-      <div class="card">
-        <h3>Aura</h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://aura73.odoo.com/ target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 3 -->
-      <div class="card">
-        <h3>Automação usando Power Automate</h3>
-        <p>Desenvolvimento de um aplicativo de automação para empresas de serviços.</p>
-        <a href="https://link-do-projeto3.com" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <p>Vamos conversar sobre como posso ajudar a sua empresa a alcançar novos resultados através da tecnologia.</p>
-    <ul>
-      <li>Email: <a href="yris@ferisan.com.br">yris@ferisan.com.br</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/yrisferreira" target="_blank">LinkedIn</a></li>
-      <li>GitHub: <a href="https://github.com/yrisferreira" target="_blank">GitHub</a></li>
-    </ul>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Yris Ferreira - Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte padrão */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #2C3E50; /* Azul escuro */
+    color: #fff;
+    padding: 5px 0; /* Menor altura */
+    text-align: center;
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px; /* Menor tamanho */
+    font-weight: 600;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Seção Hero */
+  #hero {
+    background-color: #F7C7D1; /* Rosa mais claro */
+    color: #fff;
+    padding: 50px 20px; /* Altura reduzida */
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 36px; /* Tamanho menor */
+    margin-bottom: 15px;
+  }
+  
+  #hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #hero .btn {
+    padding: 10px 20px; /* Botão menor */
+    background-color: #E74C3C; /* Tom de vermelho alegre */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  #hero .btn:hover {
+    background-color: #C0392B;
+  }
+  
+  /* Seção Sobre */
+  #sobre {
+    padding: 40px 0; /* Menor altura */
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  #sobre h2 {
+    font-size: 28px; /* Título menor */
+    color: #D95F95; /* Rosa suave */
+    margin-bottom: 15px;
+  }
+  
+  #sobre p {
+    font-size: 16px; /* Texto menor */
+    color: #555;
+  }
+  
+  /* Projetos */
+  #projetos {
+    padding: 40px 0; /* Menor altura */
+    background-color: #F5F5F5; /* Cinza mais claro */
+  }
+  
+  #projetos h2 {
+    font-size: 28px; /* Tamanho menor */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2980B9; /* Azul suave */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Menor espaçamento */
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 15px; /* Menor preenchimento */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    font-size: 22px; /* Tamanho menor */
+    margin-top: 10px;
+    color: #2980B9; /* Azul suave */
+  }
+  
+  .card p {
+    font-size: 14px; /* Texto menor */
+    margin-top: 8px;
+    color: #7f8c8d;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    padding: 8px 15px; /* Botão menor */
+    background-color: #D95F95; /* Rosa suave */
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .card .btn:hover {
+    background-color: #C0392B; /* Tom mais quente de vermelho */
+  }
+  
+  /* Contato */
+  #contato {
+    padding: 40px 0; /* Menor altura */
+    background-color: #fff;
+  }
+  
+  #contato h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #D95F95; /* Rosa suave */
+  }
+  
+  #contato p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  #contato ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  #contato ul li {
+    font-size: 16px; /* Tamanho menor */
+    margin: 8px 0;
+  }
+  
+  #contato ul li a {
+    color: #2980B9; /* Azul suave */
+    text-decoration: none;
+  }
+  
+  #contato ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #2C3E50; /* Azul escuro */
+    color: #fff;
+    padding: 15px 0; /* Menor altura */
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px; /* Texto menor */
+  }
+  
