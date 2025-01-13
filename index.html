@@ -1,106 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Portfólio - Yris Ferreira</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yris Ferreira - Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            color: #0d6efd;
+            font-size: 1.8rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project-card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .project-card a:hover {
+            background-color: #084298;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Cabeçalho 
-  <header>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>-->
+<header>
+    <h1>Yris Ferreira</h1>
+    <p>Desenvolvedora de Automação e RPA</p>
+</header>
 
-  <!-- Seção Hero -->
-  <section id="hero">
-    <div class="container">
-      <h2> </h2>
-      <p></p>
-  <!--  <a href="#projetos" class="btn">Ver Projetos</a>-->
-    </div>
-  </section>
-  <!-- Meus Projetos -->
-  <section id="projetos" class="container">
-    <h2>Meus Projetos</h2>
-    <div class="grid">
-      <!-- Projeto 1 -->
-      <div class="card">
-        <h3> Aratiri Tecnologias </h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://www.aratiri.cloud/" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 2 -->
-      <div class="card">
-        <h3>Aura</h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://aura73.odoo.com/ target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 3 -->
-      <div class="card">
-        <h3>Automação - Power Automate</h3>
-        <p>Desenvolvimento de um aplicativo de automação para empresas de serviços.</p>
-        <a href="https://link-do-projeto3.com" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 4 -->
-      <div class="card">
-        <h3> Automação - Uipath</h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://www.aratiri.cloud/" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 5 -->
-      <div class="card">
-        <h3> Automação - Automation Anywhere </h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://www.aratiri.cloud/" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-      <!-- Projeto 6 -->
-      <div class="card">
-        <h3> Grafana</h3>
-        <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
-        <a href="https://www.aratiri.cloud/" target="_blank" class="btn">Ver Projeto</a>
-      </div>
-    </div>
-  </section>
+<div class="container">
+    <section>
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Aratiri Tecnologias</h3>
+                <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Aura</h3>
+                <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Automação - Power Automate</h3>
+                <p>Desenvolvimento de um aplicativo de automação para empresas de serviços.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Automação - UiPath</h3>
+                <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Automação - Automation Anywhere</h3>
+                <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Grafana</h3>
+                <p>Desenvolvimento de uma plataforma de e-commerce integrada com Odoo.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+</div>
 
-  <!-- Contato -->
-<section id="contato" class="container contato">
-  <h2>Contato</h2>
-  <!--<p>Se você deseja discutir projetos ou parcerias, entre em contato pelos canais abaixo:</p>-->
-  <div class="contato-links">
-    <div class="contato-item">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:yris@ferisan.com.br">yris@ferisan.com.br</a>
-    </div>
-    <div class="contato-item">
-      <i class="fab fa-linkedin"></i>
-      <a href="https://www.linkedin.com/in/yris-ferreira-89b25123b/ target="_blank">LinkedIn</a>
-    </div>
-    <div class="contato-item">
-      <i class="fab fa-github"></i>
-      <a href="https://github.com/yrisferreira target="_blank">GitHub</a>
-    </div>
-  </div>
-</section>
-
-<!-- Rodapé -->
 <footer>
-  <div class="container rodape">
+    <p>Entre em contato:</p>
+    <p>Email: <a href="mailto:yris@ferisan.com.br">yris@ferisan.com.br</a> | <a href="https://www.linkedin.com/in/yrisferreira" target="_blank">LinkedIn</a> | <a href="https://github.com/yrisferreira" target="_blank">GitHub</a></p>
     <p>&copy; 2025 Yris Ferreira - Todos os direitos reservados.</p>
-  </div>
 </footer>
-
 
 </body>
 </html>
