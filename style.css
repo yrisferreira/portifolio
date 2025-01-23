@@ -207,13 +207,7 @@
 
 /* Rodapé */
 .rodape {
-  text-align: center;
-  padding: 15px 0;
-  background-color: #333;
-  color: #fff;
-}
-
-.rodape p {
-  margin: 0;
-  font-size: 0.9rem;
+.after-footer {
+  background-color: var(--primary-color); /* Azul do topo */
+  height: 50px; /* Altura da seção */
 }
