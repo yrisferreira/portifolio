@@ -29,21 +29,4 @@
   
   <!-- Bigodes -->
   <path d="M15 35L25 34M15 38L25 37M39 34L49 35M39 37L49 38" stroke="#222" stroke-width="1" stroke-linecap="round"/>
-</svg>
-<!-- Modal de solicitação de visualização -->
-<div id="modal-solicitacao" class="modal-solicitacao" style="display:none;">
-  <div class="modal-content">
-    <span class="close-modal" id="close-modal">&times;</span>
-    <h2>Solicitar Visualização do Projeto</h2>
-    <form action="https://formspree.io/f/xdoqzqzq" method="POST" class="solicitacao-form">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="motivo">Motivo/Interesse:</label>
-      <textarea id="motivo" name="motivo" rows="3" required></textarea>
-      <button type="submit" class="btn">Enviar Solicitação</button>
-    </form>
-  </div>
-</div>
-<link rel="icon" type="image/svg+xml" href="favicon.svg"> 
+</svg> 
