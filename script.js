@@ -44,4 +44,91 @@ function typeWelcome(text, el, speed = 90) {
 const typingEl = document.getElementById('typing-welcome');
 if (typingEl) {
     typeWelcome('Welcome :)', typingEl);
-} 
+}
+
+// Fun Facts por categoria
+const factsByCategory = {
+  rpa: [
+    'Sabia que um robô RPA pode economizar até 40 horas de trabalho por semana? 🚀',
+    'RPA pode reduzir custos operacionais em até 65%! 💰',
+    'Automation Anywhere processa mais de 1 bilhão de automações por dia! 🌐',
+    'O mercado global de RPA deve atingir $22 bilhões até 2025! 📈',
+    'RPA pode reduzir erros em processos em até 95%! ✨',
+    'Empresas que usam RPA têm ROI médio de 250%! 💎'
+  ],
+  python: [
+    'Python é a linguagem mais usada em RPA e Data Science! 🐍',
+    'O nome Python foi inspirado no grupo Monty Python! 🎭',
+    'Python tem mais de 137.000 bibliotecas disponíveis! 📚',
+    'Python é usado por 8.2 milhões de desenvolvedores! 👩‍💻',
+    'Instagram e Spotify são construídos com Python! 🎵',
+    'Python é a linguagem que mais cresce em RPA! 📊'
+  ],
+  ia: [
+    'IA pode aumentar a produtividade do RPA em 50%! 🧠',
+    'Chatbots com IA resolvem 70% dos casos sem humanos! 💬',
+    'Machine Learning pode prever falhas antes de acontecerem! 🔮',
+    'IA + RPA = Hyperautomation, tendência segundo Gartner! 🌟',
+    'IPA (Intelligent Process Automation) é o futuro da automação! 🚀',
+    'IA pode reduzir o tempo de desenvolvimento RPA em 60%! ⚡'
+  ]
+};
+
+let currentCategory = 'rpa';
+let currentIndex = 0;
+
+const factText = document.querySelector('.fun-fact');
+const prevBtn = document.querySelector('.prev-fact-btn');
+const nextBtn = document.querySelector('.next-fact-btn');
+const currentFactSpan = document.querySelector('.current-fact');
+const totalFactsSpan = document.querySelector('.total-facts');
+const categoryButtons = document.querySelectorAll('.fact-category');
+
+function updateFact() {
+  const facts = factsByCategory[currentCategory];
+  factText.textContent = facts[currentIndex];
+  currentFactSpan.textContent = currentIndex + 1;
+  totalFactsSpan.textContent = facts.length;
+}
+
+function showNextFact() {
+  const facts = factsByCategory[currentCategory];
+  currentIndex = (currentIndex + 1) % facts.length;
+  updateFact();
+}
+
+function showPrevFact() {
+  const facts = factsByCategory[currentCategory];
+  currentIndex = (currentIndex - 1 + facts.length) % facts.length;
+  updateFact();
+}
+
+function changeCategory(category) {
+  currentCategory = category;
+  currentIndex = 0;
+  updateFact();
+  
+  // Atualizar botões de categoria
+  categoryButtons.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.category === category);
+  });
+}
+
+// Event Listeners
+if (prevBtn) prevBtn.addEventListener('click', showPrevFact);
+if (nextBtn) nextBtn.addEventListener('click', showNextFact);
+
+categoryButtons.forEach(btn => {
+  btn.addEventListener('click', () => changeCategory(btn.dataset.category));
+});
+
+// Inicializar
+if (factText) {
+  updateFact();
+}
+
+// Adicionar navegação por teclado
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') showNextFact();
+  if (e.key === 'ArrowLeft') showPrevFact();
+}); 
