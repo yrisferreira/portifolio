@@ -1,21 +1,47 @@
-// script para curiosidades de Python
-const facts = [
-  'O nome Python vem do grupo de comédia britânico "Monty Python", não da cobra!',
-  'Python foi lançado em 1991 por Guido van Rossum.',
-  'O Zen do Python pode ser acessado digitando "import this" no terminal Python.',
-  'Python é uma das linguagens mais usadas em ciência de dados e inteligência artificial.',
-  'A indentação em Python não é opcional, ela define blocos de código!',
-  'O mascote oficial do Python é uma cobra chamada "Python".',
-  'Python é usado por empresas como Google, Netflix, Spotify e Instagram.',
-  'Você pode rodar um servidor web com apenas uma linha: python -m http.server',
-  'Python suporta múltiplos paradigmas: orientado a objetos, funcional e imperativo.'
-];
+// Modal de solicitação de visualização
+const modal = document.getElementById('modal-solicitacao');
+const closeModal = document.getElementById('close-modal');
 
-const btn = document.getElementById('python-facts-btn');
-const fact = document.getElementById('python-fact');
+// Função para abrir o modal
+function openModal(e) {
+    e.preventDefault(); // Previne o comportamento padrão do link
+    modal.style.display = 'block';
+}
 
-btn.addEventListener('click', () => {
-  const random = Math.floor(Math.random() * facts.length);
-  fact.textContent = facts[random];
-  fact.style.display = 'block';
-}); 
+// Função para fechar o modal
+function closeModalFunc() {
+    modal.style.display = 'none';
+}
+
+// Event listeners
+closeModal.addEventListener('click', closeModalFunc);
+
+// Fechar modal quando clicar fora dele
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModalFunc();
+    }
+});
+
+// Adicionar evento de clique nos botões "Solicitar Visualização"
+document.querySelectorAll('.solicitar-btn').forEach(button => {
+    button.addEventListener('click', openModal);
+});
+
+// Animação de digitação para 'Welcome :)'
+function typeWelcome(text, el, speed = 90) {
+    let i = 0;
+    function type() {
+        if (i <= text.length) {
+            el.textContent = text.slice(0, i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+const typingEl = document.getElementById('typing-welcome');
+if (typingEl) {
+    typeWelcome('Welcome :)', typingEl);
+} 
