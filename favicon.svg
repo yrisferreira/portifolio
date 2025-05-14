@@ -1,29 +1,34 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Cabeça do gato -->
-  <circle cx="32" cy="32" r="28" fill="#FFC0CB" stroke="#222" stroke-width="2"/>
+  <circle cx="32" cy="32" r="28" fill="#f7b4c7" stroke="#222" stroke-width="2"/>
   
   <!-- Orelhas -->
-  <path d="M15 20L32 32L20 10Z" fill="#FFC0CB" stroke="#222" stroke-width="2"/>
-  <path d="M49 20L32 32L44 10Z" fill="#FFC0CB" stroke="#222" stroke-width="2"/>
+  <path d="M15 20L32 32L20 10Z" fill="#f7b4c7" stroke="#222" stroke-width="2"/>
+  <path d="M49 20L32 32L44 10Z" fill="#f7b4c7" stroke="#222" stroke-width="2"/>
   
   <!-- Rosto -->
-  <circle cx="32" cy="32" r="20" fill="#FFE4E8"/>
+  <circle cx="32" cy="32" r="20" fill="#ffe4e8"/>
   
-  <!-- Olhos -->
-  <circle cx="24" cy="30" r="4" fill="#222"/>
-  <circle cx="40" cy="30" r="4" fill="#222"/>
-  <circle cx="25" cy="28" r="1.5" fill="#fff"/>
-  <circle cx="41" cy="28" r="1.5" fill="#fff"/>
+  <!-- Óculos -->
+  <rect x="18" y="26" width="28" height="10" rx="5" fill="#fff" stroke="#222" stroke-width="2"/>
+  <rect x="20" y="28" width="10" height="6" rx="3" fill="#b7aaff" stroke="#222"/>
+  <rect x="34" y="28" width="10" height="6" rx="3" fill="#b7aaff" stroke="#222"/>
+  <path d="M30 31H34" stroke="#222" stroke-width="2"/>
+  
+  <!-- Olhos por trás dos óculos -->
+  <circle cx="25" cy="31" r="2.5" fill="#222"/>
+  <circle cx="39" cy="31" r="2.5" fill="#222"/>
+  <circle cx="26" cy="30" r="1" fill="#fff"/>
+  <circle cx="40" cy="30" r="1" fill="#fff"/>
   
   <!-- Nariz -->
-  <path d="M32 34L29 38H35L32 34Z" fill="#FF9CAE"/>
+  <path d="M32 34L30 37H34L32 34Z" fill="#ff9cae"/>
   
   <!-- Boca -->
-  <path d="M26 40C28 42 36 42 38 40" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 39C30 41 34 41 36 39" stroke="#222" stroke-width="2" stroke-linecap="round"/>
   
-  <!-- Terceiro olho -->
-  <circle cx="32" cy="24" r="3" fill="#222"/>
-  <circle cx="32" cy="23" r="1" fill="#fff"/>
+  <!-- Bigodes -->
+  <path d="M15 35L25 34M15 38L25 37M39 34L49 35M39 37L49 38" stroke="#222" stroke-width="1" stroke-linecap="round"/>
 </svg>
 <!-- Modal de solicitação de visualização -->
 <div id="modal-solicitacao" class="modal-solicitacao" style="display:none;">
