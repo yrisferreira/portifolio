@@ -4,7 +4,7 @@ const closeModal = document.getElementById('close-modal');
 
 // Função para abrir o modal
 function openModal(e) {
-    e.preventDefault(); // Previne o comportamento padrão do link
+    e.preventDefault();
     modal.style.display = 'block';
 }
 
@@ -108,7 +108,6 @@ function changeCategory(category) {
   currentIndex = 0;
   updateFact();
   
-  // Atualizar botões de categoria
   categoryButtons.forEach(btn => {
     btn.classList.toggle('active', btn.dataset.category === category);
   });
@@ -131,17 +130,4 @@ if (factText) {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') showNextFact();
   if (e.key === 'ArrowLeft') showPrevFact();
-});
-
-// Garantir que o formulário seja enviado via HTTPS
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('.solicitacao-form');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      if (window.location.protocol !== 'https:') {
-        window.location.href = 'https://' + window.location.host + window.location.pathname;
-        e.preventDefault();
-      }
-    });
-  }
 }); 
