@@ -385,15 +385,24 @@ body {
 }
 .close-modal {
   position: absolute;
-  right: 20px;
-  top: 15px;
-  font-size: 28px;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
   cursor: pointer;
   color: #666;
-  transition: color 0.3s;
+  padding: 0.5rem;
+  line-height: 1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 .close-modal:hover {
-  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.close-modal:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(247, 180, 199, 0.2);
 }
 .solicitacao-form {
   display: flex;
@@ -830,4 +839,32 @@ body {
   height: 6px;
   background: linear-gradient(90deg, #4f8ef7, #b7aaff, #f7b4c7);
   border-radius: 24px 24px 0 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f7b4c7;
+  box-shadow: 0 0 0 3px rgba(247, 180, 199, 0.2);
 } 

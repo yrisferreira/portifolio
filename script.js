@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var typingEl = document.getElementById('typing-welcome');
   if (typingEl) {
-    typeWelcome('Welcome :)', typingEl);
+    typeWelcome('Bem-vindo(a) :)', typingEl);
   }
 
   // Fun Facts por categoria

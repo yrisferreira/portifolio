@@ -239,15 +239,21 @@
   <!-- Modal de solicitação de visualização -->
   <div id="modal-solicitacao" class="modal-solicitacao">
     <div class="modal-content">
-      <span class="close-modal" id="close-modal">&times;</span>
+      <button type="button" class="close-modal" id="close-modal" aria-label="Fechar modal">&times;</button>
       <h2>Solicitar Visualização do Projeto</h2>
       <form action="https://formspree.io/f/xjkwplgw" method="POST" class="solicitacao-form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="motivo">Motivo/Interesse:</label>
-        <textarea id="motivo" name="motivo" rows="3" required></textarea>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="motivo">Motivo/Interesse:</label>
+          <textarea id="motivo" name="motivo" rows="3" required aria-required="true"></textarea>
+        </div>
         <button type="submit" class="btn">Enviar Solicitação</button>
       </form>
     </div>
