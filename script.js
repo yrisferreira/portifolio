@@ -131,4 +131,17 @@ if (factText) {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') showNextFact();
   if (e.key === 'ArrowLeft') showPrevFact();
+});
+
+// Garantir que o formulário seja enviado via HTTPS
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.solicitacao-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      if (window.location.protocol !== 'https:') {
+        window.location.href = 'https://' + window.location.host + window.location.pathname;
+        e.preventDefault();
+      }
+    });
+  }
 }); 
